@@ -1,1 +1,37 @@
-
+<!doctype html>
+<html>
+  <head>
+    <title>Instagram Unfollow/Like App - Followings</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Users You're Following</h1>
+      <% if (followings.length) { %>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Followers</th>
+              <th>Following</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% followings.forEach((user) => { %>
+              <tr>
+                <td><a href="https://www.instagram.com/<%= user.username %>" target="_blank"><%= user.username %></a></td>
+                <td><%= user.followerCount %></td>
+                <td><%= user.followingCount %></td>
+                <td><button class="unfollow-button" data-id="<%= user.id %>">Unfollow</button></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      <% } else { %>
+        <p>You're not following anyone yet.</p>
+      <% } %>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Instagram Unfollow/Like App - Login</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Instagram Unfollow/Like App</h1>
+      <p>Please log in to your Instagram account to continue:</p>
+      <% if (error) { %>
+        <p class="error"><%= error %></p>
+      <% } %>
+      <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Log In">
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
