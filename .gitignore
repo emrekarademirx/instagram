@@ -1,0 +1,21 @@
+# Node.js modülleri
+node_modules/
+
+# Yerel geliştirme dosyaları
+.env
+*.log
+
+# IDE / editör dosyaları
+.vscode/
+.idea/
+
+# Geçici dosyalar
+*.tmp
+
+# Çıktı dosyaları
+dist/
+coverage/
+
+# Diğer dosyalar
+DS_Store
+Thumbs.db

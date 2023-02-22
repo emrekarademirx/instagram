@@ -1,0 +1,16 @@
+İlk olarak, Node.js ve gerekli paketleri yükleyelim. Node.js'in son sürümünü indirdiğinizden emin olun. Daha sonra, projemiz için "instagram-private-api" kütüphanesini yüklemek için aşağıdaki komutu kullanabilirsiniz:
+
+npm install instagram-private-api
+
+Bu kütüphane, Instagram hesabınıza otomatik olarak giriş yapmanızı, takip etmeyen kullanıcıları takip etmekten çıkarmayı ve anasayfa beğenisi yapmayı sağlar.
+
+Ardından, programımızda kullanacağımız farklı modülleri ve arayüzü tasarlamak için gerekli paketleri yükleyebiliriz. Aşağıdaki komutları kullanabilirsiniz:
+
+npm install express
+npm install ejs
+npm install body-parser
+npm install puppeteer
+
+Bu paketler, programımızın sunucu tarafını oluşturmak, şablonları yönetmek, HTTP isteklerini analiz etmek ve Instagram anasayfasındaki gönderilere otomatik olarak beğeni yapmak için gereklidir.
+
+Programımızı, basit bir HTML formu kullanarak Instagram hesabınıza otomatik olarak giriş yapmanızı, takip etmeyen kullanıcıları takip etmekten çıkarmayı ve anasayfa gönderilerine otomatik olarak beğeni yapmanızı sağlayacak şekilde tasarlayabiliriz.
